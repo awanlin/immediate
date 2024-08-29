@@ -104,6 +104,13 @@ catalog:
     #   rules:
     #     - allow: [User, Group]
 
+  providers:
+    routerEntityProvider:
+      schedule:
+        frequency: { minutes: 3 }
+        timeout: { minutes: 2 }
+        initialDelay: { seconds: 5 }
+
 kubernetes:
   # see https://backstage.io/docs/features/kubernetes/configuration for kubernetes configuration options
 
